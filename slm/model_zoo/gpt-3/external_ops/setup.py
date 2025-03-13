@@ -180,6 +180,7 @@ def setup_token_dispatcher_utils():
         ext_modules=CUDAExtension(
             sources=[
                 "token_dispatcher_utils/topk_to_multihot.cu",
+                "token_dispatcher_utils/topk_to_multihot_grad.cu",
             ],
             extra_compile_args={
                 "cxx": [
